@@ -1,0 +1,21 @@
+{
+  "name": "work",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "mongo": "docker run --name dev-mongo -p 27017:27017 mongo"
+  },
+  "workspaces": [
+    "back",
+    "front"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/express": "^5.0.1",
+    "express": "^5.1.0",
+    "mongodb": "^6.16.0"
+  }
+}

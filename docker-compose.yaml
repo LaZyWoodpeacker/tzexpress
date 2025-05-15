@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  mongodb:
+    image: mongo:6-jammy
+    restart: always
+    ports:
+      - '27017:27017'
+  app:
+    build: . 
+    environment:
+      - MONGO_PATH=mongodb://mongodb:27017
+    command: npm run deploy -w back
+    ports:
+     - 3000:3000
+    depends_on:
+      - mongodb

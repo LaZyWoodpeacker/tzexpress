@@ -1,0 +1,35 @@
+*
+  box-sizing: border-box
+  margin: 0 
+
+.app
+  min-height: 100vh
+
+.rich-editor
+  border: 1px solid #ddd
+  border-radius: 4px
+  width: 100%
+  &-toolbar
+    padding: 8px
+    border-bottom: 1px solid #ddd
+    display: flex
+    gap: 5px
+    background: #f5f5f5
+    & button
+      background: white
+      border: 1px solid #ddd
+      border-radius: 3px
+      padding: 5px 10px
+      cursor: pointer
+      &:hover
+        background: #eee
+  &-editor-container
+    padding: 15px
+    min-height: 300px
+    cursor: text
+  &-blockquote
+    border-left: 5px solid #eee
+    color: #666
+    font-style: italic
+    margin: 16px 0
+    padding: 10px 20px
